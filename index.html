@@ -37,10 +37,10 @@
 						<div class="input-wrapper row">
 							<label class="input col">
 								<input type="hidden" value="any" id="network_class" />
-								<p class="input__title">Network Class</p>
+								<p class="input__title">Classe de rede</p>
 								<button class="button-switcher button-switcher--active" type="button"
 									onclick="switcher(this, 'network_class', '')" value="any" id="network_class-a">
-									<span class="button-switcher__text button-switcher__text--active">Any</span>
+									<span class="button-switcher__text button-switcher__text--active">Qualquer</span>
 								</button>
 							</label>
 							<label class="input col">
@@ -67,7 +67,7 @@
 						</div>
 						<div class="input-wrapper row">
 							<label class="input col ">
-								<p class="input__title">Subnet</p>
+								<p class="input__title">Sub-rede</p>
 								<div class="dropdown-wrapper">
 									<div class="input-field row " tabindex="0">
 										<select class="input-field__text" onchange="toggleRelatedInputs(this)"
@@ -171,7 +171,7 @@
 										</select>
 									</div>
 									<div class="input-hints row">
-										<span class="input-hints__hint input-hints__hint--comma">Subnets count:
+										<span class="input-hints__hint input-hints__hint--comma">Contagem de sub-redes:
 											32</span>
 									</div>
 								</div>
@@ -179,7 +179,7 @@
 						</div>
 						<div class="input-wrapper row">
 							<label class="input col  ">
-								<p class="input__title">IP Address</p>
+								<p class="input__title">Endereço de IP</p>
 								<div class="input-field row">
 
 									<input type="text" class="input-field__input" placeholder="a.b.c.d"
@@ -588,7 +588,7 @@
 						</div>
 						<div class="input-wrapper row">
 							<label class="input col  ">
-								<p class="input__title">IP Address</p>
+								<p class="input__title">Endereço de IP</p>
 								<div class="input-field row">
 
 									<input type="text" class="input-field__input" placeholder="a:b:c:d:e:f:g:h"
@@ -608,7 +608,7 @@
 
 
 
-						<button class="button button--primary ml-auto" onclick="calculate(this)">Calculate</button>
+						<button class="button button--primary ml-auto" onclick="calculate(this)">Calcular</button>
 					</div>
 
 
@@ -639,50 +639,50 @@
 						<table class="result-table">
 							<thead class="dark">
 								<tr>
-									<th class="dark indigo" colspan="4">IP SUBNET</th>
+									<th class="dark indigo" colspan="4">SUB-REDE IP</th>
 								</tr>
 							</thead>
 							<tbody>
 								<tr>
-									<th>IP Address</th>
+									<th>Endereço de IP</th>
 									<td id="ipv4_ip_address">94.204.187.191</td>
-									<th>Short</th>
+									<th>Curto</th>
 									<td id="ipv4_short_address">94.204.187.191 /30</td>
 								</tr>
 								<tr>
-									<th>IP Type</th>
-									<td id="ipv4_type">Public</td>
-									<th>Integer ID</th>
+									<th>Tipo de IP</th>
+									<td id="ipv4_type">Público</td>
+									<th>ID inteiro</th>
 									<td id="ipv4_integer_id">1590475711</td>
 								</tr>
 								<tr>
-									<th>Network Address</th>
+									<th>Endereço de IP</th>
 									<td id="ipv4_net_address">94.204.187.188</td>
-									<th>Hex ID</th>
+									<th>ID Hexadecimal</th>
 									<td id="ipv4_hex_id">0x5eccbbbf</td>
 								</tr>
 								<tr>
-									<th>Broadcast Address</th>
+									<th>Endereço de Transmissão</th>
 									<td id="ipv4_broadcast_address">94.204.187.191</td>
 									<th>in-addr.arpa</th>
 									<td id="ipv4_arpa_address">191.187.204.94.in-addr.arpa</td>
 								</tr>
 								<tr>
-									<th>Total Number of Hosts</th>
+									<th>Número total de hosts</th>
 									<td id="ipv4_total_hosts">4</td>
-									<th>IPv4 Mapped Address</th>
+									<th>Endereço mapeado IPv4</th>
 									<td id="ipv4_mapped_address">::ffff:5ecc.bbbf</td>
 								</tr>
 								<tr>
-									<th>Number of Usable Hosts</th>
+									<th>Número total de hosts utilizáveis</th>
 									<td id="ipv4_usable_hosts">2</td>
-									<th>6to4 Prefix</th>
+									<th>Prefixo 6to4</th>
 									<td id="ipv4_6to4_prefix">2002:5ecc.bbbf::/48</td>
 								</tr>
 								<tr>
-									<th>Subnet Mask</th>
+									<th>Máscara de sub-rede</th>
 									<td id="ipv4_subnet_mask">255.255.255.252</td>
-									<th>IP Class</th>
+									<th>Classe de IP</th>
 									<td id="ipv4_ip_class">C</td>
 								</tr>
 								<tr>
@@ -692,21 +692,27 @@
 									<td id="ipv4_cidr_notation">/30</td>
 								</tr>
 								<tr>
-									<th>Usable Host IP Range</th>
+									<th>Faixa de IP de host utilizável</th>
 									<td colspan="3" id="ipv4_usable_host_range">94.204.187.189 - 94.204.187.190</td>
 								</tr>
 								<tr>
-									<th>Binary ID</th>
+									<th>ID binário</th>
 									<td colspan="3" id="ipv4_binary_id">01011110110011001011101110111111</td>
 								</tr>
 								<tr>
-									<th>Binary Subnet Mask</th>
+									<th>Máscara de sub-rede binária</th>
 									<td colspan="3" id="ipv4_binary_mask">11111111.11111111.11111111.11111100</td>
 								</tr>
 							</tbody>
 						</table>
 					</div>
 				</div>
+
+
+				<!--ABA IPV6-->
+
+
+
 				<div class="calculator-result col tab" data-tab="1">
 					<div class="result-table__wrapper">
 						<table class="result-table">
