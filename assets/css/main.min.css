@@ -75,6 +75,11 @@ p {
   transition: 0.3s ease;
 }
 
+.flex-change {
+  display: flex;
+  flex-direction: row;
+}
+
 .input-field:focus-within::after {
   border-color: #A5B4FC;
   z-index: 1;
@@ -3730,7 +3735,6 @@ html.dark .tag--purple {
 }
 
 .calculator-result {
-  width: 100%;
   border-radius: 8px;
   box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.0588235294), 0px 1px 3px 0px rgba(0, 0, 0, 0.1019607843);
   background-color: #EFF6FF;
